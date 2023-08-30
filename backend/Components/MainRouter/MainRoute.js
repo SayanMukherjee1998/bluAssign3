@@ -1,8 +1,8 @@
 const express = require("express");
-const FetchImgController = require("../Controllers/fetchImage");
+const ConvertCryptoController = require("../Controllers/convertCrypto");
 
 const router = express.Router();
 /**Settling up the main Router for backend  */
-router.post("/ftchImg", FetchImgController);
+router.post("/convertCrypto", ConvertCryptoController);
 
 module.exports = router;
