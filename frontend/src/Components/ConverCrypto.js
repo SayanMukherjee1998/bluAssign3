@@ -52,6 +52,15 @@ const ConverCrypto = () => {
     <>
       <center>
         <form onSubmit={handleSubmit}>
+          <label htmlFor="Amount" >Amount :</label>
+          <input
+            type="number"
+            id="amount"
+            name="amount"
+            value={imageData.amount}
+            onChange={handleChange}
+            required
+          />
           <label htmlFor="from">Crypto Name:</label>
           <select
             id="from"
